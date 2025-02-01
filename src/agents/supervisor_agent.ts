@@ -4,6 +4,8 @@ import { invoiceReaderTool } from "~/tools/invoice_reader";
  
 const instructions = `You are a helpful assistant that can processes accounting tasks.
 If you get a file or an image, you should first use the fileTypeDetector tool to detect the type of the file.
+If file mimetype is not an image then also say that its not supported and we only support images right now.
+
 Then, you should use the invoiceReader tool to read and process the invoice.
 
 Respond with a human readable text without any markdown. Dont miss out any information returned by the tools.

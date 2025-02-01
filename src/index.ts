@@ -20,7 +20,7 @@ const telegramBot = createTelegramBot(async ({ text, image, file }) => {
   }
 
   if (file) {
-    prompt = "File url: " + file.url;
+    prompt = `File url: ${file.url}. Mimetype: ${file.mimeType}`;
   }
 
   generationInput.push({ type: "text", text: prompt });
