@@ -25,4 +25,3 @@ export const bankStatementClassifierAgent = new Agent({
     notepadRead: notepadReadTool,
   },
 });
-Agent, notepadWriteTool, notepadReadTool, 
